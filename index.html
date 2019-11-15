@@ -18,7 +18,7 @@
 	  
 	  var xhr = new XMLHttpRequest();
 // For example: https://github.com/lerocha/chinook-database/raw/master/ChinookDatabase/DataSources/Chinook_Sqlite.sqlite
-xhr.open('GET', 'https://github.com/cggit/static/Chinook_Sqlite.sqlite', true);
+xhr.open('GET', 'https://cggit.github.io/static/Chinook_Sqlite.sqlite', true);
 xhr.responseType = 'arraybuffer';
 xhr.onload = e => {
   var uInt8Array = new Uint8Array(this.response);
