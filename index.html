@@ -8,7 +8,7 @@
 	config = {
    locateFile: (filename, prefix) => {
       console.log(`prefix is : ${prefix}`);
-      return 'sql-wasm-debug.js';
+      return `${filename}`;
     }
   }
   // The `initSqlJs` function is globally provided by all of the main dist files if loaded in the browser.
@@ -34,6 +34,6 @@
 
 </head>
 <body>
-hi there yoyo
+works
 </body>
 </html>
