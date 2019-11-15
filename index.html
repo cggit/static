@@ -5,16 +5,7 @@
   <script src='sql-wasm-debug.js'></script>
 <script>
 	
-	config = {
-   locateFile: (filename, prefix) => {
-      console.log(`prefix is : ${prefix}`);
-	   console.log(`filename : ${filename}`);
-      return `${filename}`;
-    }
-  }
-  // The `initSqlJs` function is globally provided by all of the main dist files if loaded in the browser.
-  // We must specify this locateFile function if we are loading a wasm file from anywhere other than the current html page's folder.
-  initSqlJs(config).then(function (SQL) {
+	
 	  
 	  var xhr = new XMLHttpRequest();
 // For example: https://github.com/lerocha/chinook-database/raw/master/ChinookDatabase/DataSources/Chinook_Sqlite.sqlite
@@ -32,12 +23,10 @@ xhr.onload = e => {
 };
 xhr.send();
 	  
-  });
-  
 </script>
 
 </head>
 <body>
-works dd
+works
 </body>
 </html>
