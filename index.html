@@ -1,4 +1,4 @@
-  <script src='sql-wasm-debug.js'></script>
+  <script src='/sql-wasm-debug.js'></script>
 <script>
 var xhr = new XMLHttpRequest();
 // For example: https://github.com/lerocha/chinook-database/raw/master/ChinookDatabase/DataSources/Chinook_Sqlite.sqlite
@@ -13,5 +13,5 @@ xhr.onload = e => {
 };
 xhr.send();
   
-  console.log(contents);
+  console.log(db);
 </script>
