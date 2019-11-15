@@ -18,12 +18,12 @@
 	  
 	  var xhr = new XMLHttpRequest();
 // For example: https://github.com/lerocha/chinook-database/raw/master/ChinookDatabase/DataSources/Chinook_Sqlite.sqlite
-xhr.open('GET', '/static/Chinook_Sqlite.sqlite', true);
+xhr.open('GET', 'https://github.com/cggit/static/Chinook_Sqlite.sqlite', true);
 xhr.responseType = 'arraybuffer';
 xhr.onload = e => {
   var uInt8Array = new Uint8Array(this.response);
   var db = new SQL.Database(uInt8Array);
-  var contents = db.exec("SELECT * FROM albums");
+  var contents = db.exec("SELECT * FROM Album");
   // contents is now [{columns:['col1','col2',...], values:[[first row], [second row], ...]}]
 	  console.log(db);
 	console.log(contents);
@@ -36,6 +36,6 @@ xhr.send();
 
 </head>
 <body>
-works not test now cow
+works not test now cow pig
 </body>
 </html>
