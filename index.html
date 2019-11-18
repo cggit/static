@@ -26,7 +26,7 @@ xhr.onload = function(e) {
   var db = new SQL.Database(uInt8Array);
   var contents = db.exec("SELECT * FROM Employee");
   // contents is now [{columns:['col1','col2',...], values:[[first row], [second row], ...]}]
-	console.log(contents);
+	console.dir(contents);
 };
 xhr.send();
 	  
